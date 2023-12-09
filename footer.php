@@ -72,47 +72,45 @@
                                         <a href="#"><img src="../logo2.png" alt=""></a>
                                     </div>
                                     <div class="footer-info">
-                                        <p class="phone">+977-9810781885</p>
+                                        <p class="phone">+977-9818069150</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-8 col-md-12">
                                 <div class="footer-info-inner">
                                     <div class="row">
-<?php
-if(!isset($_SESSION['customer_id']))
-{
-	if(!isset($_SESSION['employee_id']))
-	{
-	?>					
-	<div class="col-lg-3 col-md-6 col-sm-6">
-		<div class="footer-title">
-			<h3>Employee Account</h3>
-		</div>
-		<ul>
-			<li><a href="employeelogin.php?logintype=Admin">Admin Login</a></li>
-			<li><a href="employeelogin.php?logintype=Employee">Employee Login</a></li>
-		</ul>
-	</div>
-	<?php
-	}
+                                        <?php
+if(!isset($_SESSION['customer_id'])) {
+    if(!isset($_SESSION['employee_id'])) {
+        ?>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="footer-title">
+                                                <h3>Employee Account</h3>
+                                            </div>
+                                            <ul>
+                                                <li><a href="employeelogin.php?logintype=Admin">Admin Login</a></li>
+                                                <li><a href="employeelogin.php?logintype=Employee">Employee Login</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <?php
+    }
 }
-	if(isset($_SESSION['employee_id']))
-	{
-	?>					
-	<div class="col-lg-3 col-md-6 col-sm-6">
-		<div class="footer-title">
-			<h3>Employee Account</h3>
-		</div>
-		<ul>
-			<li><a href="empprofile.php">Employee Profile</a></li>
-			<li><a href="empchangepassword.php">Change Password</a></li>
-			<li><a href="logout.php">Logout</a></li>
-		</ul>
-	</div>
-	<?php
-	}
-?>
+    if(isset($_SESSION['employee_id'])) {
+        ?>
+                                        <div class="col-lg-3 col-md-6 col-sm-6">
+                                            <div class="footer-title">
+                                                <h3>Employee Account</h3>
+                                            </div>
+                                            <ul>
+                                                <li><a href="empprofile.php">Employee Profile</a></li>
+                                                <li><a href="empchangepassword.php">Change Password</a></li>
+                                                <li><a href="logout.php">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                        <?php
+    }
+                                        ?>
                                         <div class="col-lg-3 col-md-6 col-sm-6">
                                             <div class="footer-title">
                                                 <h3>Your account </h3>
@@ -127,9 +125,9 @@ if(!isset($_SESSION['customer_id']))
                                                 <h3>Get in touch</h3>
                                             </div>
                                             <div class="block-contact-text">
-                                                <p> Online Auction<br>Tinkune Kathmandu, Nepal<br>Nepal</p>
-                                                <p>Call us: <span>+977-9810781885 </span></p>
-                                                <p>Email us: <span>vijaybadhur760@gmail.com</span></p>
+                                                <p>AuctionAxis<br>Kathmandu, Nepal<br>Nepal</p>
+                                                <p>Call us: <span>+977-9818069150 </span></p>
+                                                <p>Email us: <span>auctionaxisofficial@gmail.com</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -142,19 +140,19 @@ if(!isset($_SESSION['customer_id']))
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
-                                <div class="copyright">Copyright &copy; Online Auction. All Rights Reserved</div>
-                            </div>	
+                                <div class="copyright">Copyright &copy; AuctionAxis. All Rights Reserved</div>
+                            </div>
                             <div class="col-lg-6 col-md-6">
-                                 <div class="payment"><img alt="" src="img/icon/payment.png"></div>
+                                <div class="payment"><img alt="" src="img/icon/payment.png"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
             <!-- footer-area start -->
-            
+
             <!-- Modal start-->
-            <div class="modal fade modal-wrapper" id="exampleModalCenter" >
+            <div class="modal fade modal-wrapper" id="exampleModalCenter">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -167,30 +165,47 @@ if(!isset($_SESSION['customer_id']))
                                         <div class="zoomWrapper">
                                             <div id="img-1" class="zoomWrapper single-zoom">
                                                 <a href="#">
-                                                    <img id="zoom1" src="img/product/1.jpg" data-zoom-image="img/product/1.jpg" alt="big-1">
+                                                    <img id="zoom1" src="img/product/1.jpg"
+                                                        data-zoom-image="img/product/1.jpg" alt="big-1">
                                                 </a>
                                             </div>
                                             <div class="single-zoom-thumb">
-                                                <ul class="s-tab-zoom single-product-active owl-carousel" id="gallery_01">
+                                                <ul class="s-tab-zoom single-product-active owl-carousel"
+                                                    id="gallery_01">
                                                     <li>
-                                                        <a href="#" class="elevatezoom-gallery active" data-update="" data-image="img/product/1.jpg" data-zoom-image="img/product/1.jpg"><img src="img/product/1.jpg" alt="zo-th-1"/></a>
+                                                        <a href="#" class="elevatezoom-gallery active" data-update=""
+                                                            data-image="img/product/1.jpg"
+                                                            data-zoom-image="img/product/1.jpg"><img
+                                                                src="img/product/1.jpg" alt="zo-th-1" /></a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="#" class="elevatezoom-gallery" data-image="img/product/2.jpg" data-zoom-image="img/product/2.jpg"><img src="img/product/2.jpg" alt="zo-th-2"></a>
+                                                        <a href="#" class="elevatezoom-gallery"
+                                                            data-image="img/product/2.jpg"
+                                                            data-zoom-image="img/product/2.jpg"><img
+                                                                src="img/product/2.jpg" alt="zo-th-2"></a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="#" class="elevatezoom-gallery" data-image="img/product/3.jpg" data-zoom-image="img/product/3.jpg"><img src="img/product/3.jpg" alt="ex-big-3" /></a>
+                                                        <a href="#" class="elevatezoom-gallery"
+                                                            data-image="img/product/3.jpg"
+                                                            data-zoom-image="img/product/3.jpg"><img
+                                                                src="img/product/3.jpg" alt="ex-big-3" /></a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="#" class="elevatezoom-gallery" data-image="img/product/4.jpg" data-zoom-image="img/product/4.jpg"><img src="img/product/4.jpg" alt="zo-th-4"></a>
+                                                        <a href="#" class="elevatezoom-gallery"
+                                                            data-image="img/product/4.jpg"
+                                                            data-zoom-image="img/product/4.jpg"><img
+                                                                src="img/product/4.jpg" alt="zo-th-4"></a>
                                                     </li>
                                                     <li class="">
-                                                        <a href="#" class="elevatezoom-gallery" data-image="img/product/5.jpg" data-zoom-image="img/product/5.jpg"><img src="img/product/5.jpg" alt="zo-th-5"></a>
+                                                        <a href="#" class="elevatezoom-gallery"
+                                                            data-image="img/product/5.jpg"
+                                                            data-zoom-image="img/product/5.jpg"><img
+                                                                src="img/product/5.jpg" alt="zo-th-5"></a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                                 <div class="col-lg-7 col-md-7 col-sm-12">
                                     <!-- product-thumbnail-content start -->
@@ -207,10 +222,11 @@ if(!isset($_SESSION['customer_id']))
                                                 </ul>
                                             </div>
                                             <div class="price-box">
-                                               <span class="new-price">$225.00</span>
-                                               <span class="old-price">$250.00</span>
+                                                <span class="new-price">$225.00</span>
+                                                <span class="old-price">$250.00</span>
                                             </div>
-                                            <p>100% cotton double printed dress. Black and white striped top and orange high waisted skater skirt bottom.</p>
+                                            <p>100% cotton double printed dress. Black and white striped top and orange
+                                                high waisted skater skirt bottom.</p>
                                             <div class="modal-size">
                                                 <h4>Size</h4>
                                                 <select>
@@ -250,29 +266,30 @@ if(!isset($_SESSION['customer_id']))
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div>
             <!-- Modal end-->
-        </div>   
-           
-        
-		<!-- jquery -->		
-        <script src="js/vendor/jquery-1.12.4.min.js"></script>
-		<!-- all plugins JS hear -->		
-        <script src="js/popper.min.js"></script>	
-        <script src="js/bootstrap.min.js"></script>	
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.mainmenu.js"></script>	
-        <script src="js/ajax-email.js"></script>
-        <script src="js/plugins.js"></script>
-		<!-- main JS -->		
-        <script src="js/main.js"></script>
-        <script src="js/jquery.dataTables.min.js"></script>
-<script>
-$(document).ready( function () {
-    $('#datatable').DataTable();
-} );
-</script>
-    </body>
+            </div>
 
-<!-- Mirrored from demo.hasthemes.com/juta-preview/juta-v1/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Dec 2019 04:55:35 GMT -->
-</html>
+
+            <!-- jquery -->
+            <script src="js/vendor/jquery-1.12.4.min.js"></script>
+            <!-- all plugins JS hear -->
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/jquery.mainmenu.js"></script>
+            <script src="js/ajax-email.js"></script>
+            <script src="js/plugins.js"></script>
+            <!-- main JS -->
+            <script src="js/main.js"></script>
+            <script src="js/jquery.dataTables.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $('#datatable').DataTable();
+                });
+            </script>
+            </body>
+
+            <!-- Mirrored from demo.hasthemes.com/juta-preview/juta-v1/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Dec 2019 04:55:35 GMT -->
+
+            </html>

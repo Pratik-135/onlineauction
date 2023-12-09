@@ -3688,6 +3688,7 @@ input.checkbox:checked:after {
 	.w3l_banner_nav_right {
 		float: none;
 		width: 100%;
+		height: auto;
 	}
 	.navbar-nav {
 		border-top: none;
