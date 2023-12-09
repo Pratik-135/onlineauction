@@ -1,11 +1,17 @@
 <?php
 function sendmail($toaddress,$subject,$message,$name)
 {
-	$loginid 	= "onlineauctionprojectmail@myprojectcoding.xyz";
-	$password 	= "h?eeL$9e0lp6";
-	$smtpserver = "mail.myprojectcoding.xyz";
-	$smtpport 	= 26;
+
+	$loginid 	= "21e4bf701cc8f8";
+	$password 	= "2c9c85b261ac80";
+	$smtpserver = "sandbox.smtp.mailtrap.io";
+	$smtpport 	= 2525;
 	$mailsender = "OnlineAuction";
+	// $loginid 	= "onlineauctionprojectmail@myprojectcoding.xyz";
+	// $password 	= "h?eeL$9e0lp6";
+	// $smtpserver = "mail.myprojectcoding.xyz";
+	// $smtpport 	= 26;
+	// $mailsender = "OnlineAuction";
 	// Load Composer's autoloader
 	require 'PHPMailer/src/Exception.php';
 	require 'PHPMailer/src/PHPMailer.php';
@@ -13,10 +19,11 @@ function sendmail($toaddress,$subject,$message,$name)
 
 	// Instantiation and passing `true` enables exceptions
 	$mail = new PHPMailer(true);
+	echo $mail;
 
 	try {
 		//Server settings
-		$mail->SMTPDebug = false; // SMTP::DEBUG_SERVER; // Enable verbose debug output
+		$mail->SMTPDebug = 3; // SMTP::DEBUG_SERVER; // Enable verbose debug output
 		$mail->isSMTP();          // Send using SMTP
 		$mail->Host       = $smtpserver; // Set the SMTP server to send through
 		$mail->SMTPAuth   = true;  // Enable SMTP authentication
@@ -49,7 +56,7 @@ function sendmail($toaddress,$subject,$message,$name)
 	} 
 	catch (Exception $e) 
 	{
-		echo "Message could not be sent. Mailer Error: {
+		echo "Mailer Error: {
 			$mail->ErrorInfo}";
 	}
 }

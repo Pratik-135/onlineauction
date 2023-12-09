@@ -4,11 +4,16 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 function sendmail($tomail, $totmailname , $subject, $message)
 {
-	$loginid 	= "onlineauctionproject@projectmailer.xyz";
-	$password 	= "KZ9#En*OP3R9";
-	$smtpserver = "mail.projectmailer.xyz";
-	$smtpport 	= 587;
+	$loginid 	= "21e4bf701cc8f8";
+	$password 	= "2c9c85b261ac80";
+	$smtpserver = "sandbox.smtp.mailtrap.io";
+	$smtpport 	= 2525;
 	$mailsender = "OnlineAuction";
+	// $loginid 	= "onlineauctionproject@projectmailer.xyz";
+	// $password 	= "KZ9#En*OP3R9";
+	// $smtpserver = "mail.projectmailer.xyz";
+	// $smtpport 	= 587;
+	// $mailsender = "OnlineAuction";
 	$companyname= "OnlineAuction";
 	$facebook = "https://www.facebook.com/OnlineAuction";
 	$twitter = "https://www.twitter.com/OnlineAuction";
@@ -29,19 +34,27 @@ function sendmail($tomail, $totmailname , $subject, $message)
 
 	try
 	{
-		//Server settings
-		$mail->SMTPDebug = false; // SMTP::DEBUG_SERVER; // Enable verbose debug output
-		$mail->isSMTP();          // Send using SMTP
-		$mail->Host       = $smtpserver; // Set the SMTP server to send through
-		$mail->SMTPAuth   = true;  // Enable SMTP authentication
-		$mail->Username   = $loginid; // SMTP username
-		$mail->Password   = $password;  // SMTP password
-		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+		$mail->SMTPDebug = false;
+		$mail->isSMTP();
+		$mail->Host       = $smtpserver;
+		$mail->SMTPAuth   = true;
+		$mail->Username   = $loginid;
+		$mail->Password   = $password;
+		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 		$mail->Port       = $smtpport;
+		//Server settings
+		// $mail->SMTPDebug = false; // SMTP::DEBUG_SERVER; // Enable verbose debug output
+		// $mail->isSMTP();          // Send using SMTP
+		// $mail->Host       = $smtpserver; // Set the SMTP server to send through
+		// $mail->SMTPAuth   = true;  // Enable SMTP authentication
+		// $mail->Username   = $loginid; // SMTP username
+		// $mail->Password   = $password;  // SMTP password
+		// $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+		// $mail->Port       = $smtpport;
 		// TCP port to connect to
 
 		//Recipients
-		$mail->setFrom($loginid, $mailsender);
+		$mail->setFrom('prazitstha2@gmail.com', $mailsender);
 		$mail->addAddress($tomail, $totmailname);     // Add a recipient
 		$mail->addAddress($tomail);               // Name is optional
 		$mail->addReplyTo($tomail, $totmailname);
@@ -78,7 +91,7 @@ function sendmail($tomail, $totmailname , $subject, $message)
 	}
 	catch (Exception $e) 
 	{
-		echo "Message could not be sent. Mailer Error: {
+		echo "Messagessanmas,dma Error: {
 			$mail->ErrorInfo}";
 	}
 }

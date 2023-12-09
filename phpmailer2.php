@@ -52,7 +52,7 @@ function sendmail($tomail, $totmailname , $subject, $message)
 	} 
 	catch (Exception $e) 
 	{
-		echo "Message could not be sent. Mailer Error: {
+		echo "Message Error: {
 			$mail->ErrorInfo}";
 	}
 }
