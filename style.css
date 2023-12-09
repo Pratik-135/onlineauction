@@ -1091,7 +1091,7 @@ body {
   line-height: 24px;
 }
 .slier-btn-1 {
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 .slider-text-info.style-1 .slier-btn-1 a,
 .slider-text-info.style-2 .slier-btn-1 a {
@@ -1154,10 +1154,10 @@ body {
 .slider-text-info.style-2 .title1 {
   color: #2386db;
   display: inline-block;
-  font-size: 120px;
+  font-size: 80px;
   font-weight: 300;
   line-height: 1;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-transform: uppercase;
 }
 .slider-text-info.style-2 .title1 span {

@@ -202,9 +202,34 @@ while($rscategory = mysqli_fetch_array($qsqlcategory)) {
 			<!-- header-mid-area end -->
 			<div class="header-top ">
 				<div class="container-fluid">
-					<div class="row d-flex justify-content-end py-2">
-						<div class="col-lg-8">
-							<div class="main-menu-area">
+					<div class="row d-flex justify-content-between py-2">
+						<div class="col-lg-3 d-flex justify-content-start ">
+							<div class="top-dropdown">
+								<ul>
+
+									<li class="drodown-show"><a href="#" style="font-weight:bold; font-size:16px">
+											Auction Categories <i class="fa fa-angle-down"></i></a>
+										<ul class="open-dropdown setting" style="width:150px">
+											<li><a href="latestauction.php?auctiontype=Latest Auctions">Latest
+													Auctions</a>
+											</li>
+											<li><a href="featured.php?auctiontype=featured Auctions">Featured
+													Auctions</a>
+											</li>
+											<li><a href="upcominauction.php?auctiontype=Upcoming Auctions">Upcoming
+													Auctions</a></li>
+											<li><a href="closingauctions.php?auctiontype=Closing Auctions"
+													style="color: black;">Closing Auctions</a></li>
+											<li><a href="closed.php?auctiontype=Closed Auctions">Closed Auctions</a>
+											</li>
+											<li><a href="displayreversebid.php">Reverse Bid</a>
+											</li>
+
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<!-- <div class="main-menu-area">
 
 								<nav>
 
@@ -216,18 +241,18 @@ while($rscategory = mysqli_fetch_array($qsqlcategory)) {
 										</li>
 										<li><a href="upcominauction.php?auctiontype=Upcoming Auctions">Upcoming
 												Auctions</a></li>
-										<!-- <li><a href="closingauctions.php?auctiontype=Closing Auctions"
-												style="color: black;">Closing Auctions</a></li> -->
+										<li><a href="closingauctions.php?auctiontype=Closing Auctions"
+												style="color: black;">Closing Auctions</a></li>
 										<li><a href="closed.php?auctiontype=Closed Auctions">Closed Auctions</a></li>
 										<li><a href="displayreversebid.php">Reverse Bid</a>
 										</li>
 
 									</ul>
 								</nav>
-							</div>
+							</div> -->
 						</div>
-						<div class="col-lg-4 col-md-9 ">
-							<div class="row ">
+						<div class="col-lg-9 col-md-9 ">
+							<div class="row d-flex justify-content-end">
 								<?php
                                         if(!isset($_SESSION['employee_id'])) {
                                             ?>
@@ -288,7 +313,7 @@ if(isset($_SESSION['employee_id'])) {
 																class="fa fa-angle-down"></i></a>
 														<ul class="open-dropdown setting">
 															<li><a href="selectcategory.php">Add Products</a></li>
-															<!-- <li><a href="viewproduct.php">View Products</a></li> -->
+															<li><a href="viewproduct.php">View Products</a></li>
 														</ul>
 													</li>
 													<li class="drodown-show"><a href="#"> My account <i
@@ -357,7 +382,7 @@ if(isset($_SESSION['employee_id'])) {
 														<ul class="open-dropdown setting">
 															<li><a href="viewbilling.php">View Billing</a></li>
 															<li><a href="viewcustomer.php">Customer Report</a></li>
-															<li><a href="viewmessage.php">View Messages</a></li>
+															<!-- <li><a href="viewmessage.php">View Messages</a></li> -->
 															<li><a href="viewpayment.php">View Payment</a></li>
 															<li><a href="viewproduct.php">View products</a></li>
 														</ul>

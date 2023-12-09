@@ -117,8 +117,9 @@ while($rsproduct = mysqli_fetch_array($qsqlproduct)) {
 														</div>
 													</div>
 													<div class="add-actions">
-														<ul class="add-actions-link">
-															<li class="add-cart"><a
+														<ul class="add-actions-link  d-flex justify-content-center">
+															<li class="add-cart d-flex justify-content-center"><a
+																	style="text-center"
 																	href="single.php?productid=<?php echo $rsproduct[0]; ?>"><i
 																		class="ion-android-cart"></i> Click here to
 																	BID</a></li>
@@ -231,7 +232,7 @@ while($rsproduct = mysqli_fetch_array($qsqlproduct)) {
 														</div>
 													</div>
 													<div class="add-actions">
-														<ul class="add-actions-link">
+														<ul class="add-actions-link d-flex justify-content-center">
 															<li class="add-cart"><a
 																	href="single.php?productid=<?php echo $rsproduct[0]; ?>"><i
 																		class="ion-android-cart"></i> Click here to
@@ -348,7 +349,7 @@ while($rsproduct = mysqli_fetch_array($qsqlproduct)) {
 															);
 														</script>
 														<!-- Timer code ends here -->
-														<div class="price-box">
+														<div class="price-box d-flex justify-content-center">
 															<span class="new-price">Current Bid Amount : NPR<?php
                         if($rsproduct['ending_bid'] > $rsproduct['starting_bid']) {
                             echo $rsproduct['ending_bid'];
@@ -360,7 +361,7 @@ while($rsproduct = mysqli_fetch_array($qsqlproduct)) {
 														</div>
 													</div>
 													<div class="add-actions">
-														<ul class="add-actions-link">
+														<ul class="add-actions-link d-flex justify-content-center">
 															<li class="add-cart"><a
 																	href="single.php?productid=<?php echo $rsproduct[0]; ?>"><i
 																		class="ion-android-cart"></i> Click here to
@@ -489,7 +490,7 @@ while($rsproduct = mysqli_fetch_array($qsqlproduct)) {
 														</div>
 													</div>
 													<div class="add-actions">
-														<ul class="add-actions-link">
+														<ul class="add-actions-link d-flex justify-content-center">
 															<li class="add-cart"><a
 																	href="single.php?productid=<?php echo $rsproduct[0]; ?>"><i
 																		class="ion-android-cart"></i> Click here to
@@ -619,7 +620,7 @@ while($rsproduct = mysqli_fetch_array($qsqlproduct)) {
 														</div>
 													</div>
 													<div class="add-actions">
-														<ul class="add-actions-link">
+														<ul class="add-actions-link d-flex justify-content-center">
 															<li class="add-cart"><a
 																	href="single.php?productid=<?php echo $rsproduct[0]; ?>"><i
 																		class="ion-android-cart"></i> Click here to
